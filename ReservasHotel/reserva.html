@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Reserva de Hotel</title>
+</head>
+<body>
+    <h1>Reserva de Hotel</h1>
+    <form action="calcular.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="precio">Precio por Noche:</label>
+        <input type="number" id="precio" name="precio" step="0.01" min="0" required><br><br>
+
+        <label for="numero_noches">Número de Noches:</label>
+        <input type="number" id="numero_noches" name="numero_noches" min="1" required><br><br>
+
+        <input type="submit" value="Calcular Total">
+    </form>
+</body>
+</html>
