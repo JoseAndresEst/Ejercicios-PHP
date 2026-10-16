@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar sugerencia</title>
+</head>
+<body>
+
+    <h1>Buzón de sugerencias</h1>
+
+    <form action="procesar.php" method="POST">
+        <label for="nombre">Nombre del usuario:</label>
+        <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            required
+        >
+
+        <br><br>
+
+        <label for="sugerencia">Escribe tu sugerencia:</label>
+        <br>
+        <textarea
+            id="sugerencia"
+            name="sugerencia"
+            rows="6"
+            cols="40"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Enviar sugerencia</button>
+    </form>
+
+</body>
+</html>

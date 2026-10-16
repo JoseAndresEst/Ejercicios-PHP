@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de aficiones</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .contenedor {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #ccc;
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #263248;
+        }
+
+        .opcion {
+            display: block;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .opcion:hover {
+            background-color: #f0f5ff;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: #2864dc;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #194db2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Mis aficiones</h1>
+
+        <p>¿Cuáles son tus aficiones? Selecciona todas las que te gusten:</p>
+
+        <form action="comprobar.php" method="POST">
+
+            <label class="opcion">
+                <input type="checkbox" name="deporte" value="si">
+                ⚽ Practicar deporte
+            </label>
+
+            <label class="opcion">
+                <input type="checkbox" name="musica" value="si">
+                🎵 Escuchar música
+            </label>
+
+            <label class="opcion">
+                <input type="checkbox" name="lectura" value="si">
+                📚 Leer libros
+            </label>
+
+            <label class="opcion">
+                <input type="checkbox" name="viajar" value="si">
+                ✈️ Viajar
+            </label>
+
+            <label class="opcion">
+                <input type="checkbox" name="videojuegos" value="si">
+                🎮 Jugar a videojuegos
+            </label>
+
+            <button type="submit">Enviar aficiones</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
+
+<!--
+Esto es con arrays 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de aficiones</title>
+</head>
+<body>
+
+    <h1>Mis aficiones</h1>
+
+    <p>¿Cuáles son tus aficiones? Selecciona las que quieras:</p>
+
+    <form action="comprobar.php" method="POST">
+
+        <input type="checkbox" name="aficiones[]" value="Deporte">
+        Practicar deporte
+        <br><br>
+
+        <input type="checkbox" name="aficiones[]" value="Musica">
+        Escuchar música
+        <br><br>
+
+        <input type="checkbox" name="aficiones[]" value="Lectura">
+        Leer libros
+        <br><br>
+
+        <input type="checkbox" name="aficiones[]" value="Viajar">
+        Viajar
+        <br><br>
+
+        <input type="checkbox" name="aficiones[]" value="Videojuegos">
+        Jugar a videojuegos
+        <br><br>
+
+        <input type="submit" value="Enviar aficiones">
+
+    </form>
+
+</body>
+</html>
+-->
